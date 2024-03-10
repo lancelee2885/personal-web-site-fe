@@ -6,7 +6,7 @@ import HelloWorld from '@/components/HelloWorld.vue';
 const routes = [
   {
     path: '/',
-    redirect: 'HelloWorld',
+    name: 'HelloWorld',
     component: HelloWorld,
   },
   {

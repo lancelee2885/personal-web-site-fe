@@ -2,10 +2,10 @@
   <div class="jobs-page">
     <h2>Jobs</h2>
     <div class="card-container">
-      <div v-for="job in jobs" :key="job.id" class="card">
+      <div v-for="job in jobs" :key="job.ID" class="card">
         <div class="card-content">
-          <h3>{{ job.name }}</h3>
-          <vue-markdown :source="job.content"></vue-markdown>
+          <h3>{{ job.Name }}</h3>
+          <p>{{ job.Content }}</p>
         </div>
       </div>
     </div>
@@ -14,12 +14,8 @@
 
 <script>
 import axios from 'axios';
-import VueMarkdown from 'vue-markdown';
 
 export default {
-  components: {
-    VueMarkdown,
-  },
   data() {
     return {
       jobs: [],
@@ -31,7 +27,8 @@ export default {
   methods: {
     async fetchJobs() {
       try {
-        const response = await axios.get('http://localhost/api/entities?type=jobs');
+        const BACKEND_API = 'http://localhost/api/';
+        const response = await axios.get(`${BACKEND_API}entities?type=jobs`);
         this.jobs = response.data;
       } catch (error) {
         console.error('Failed to fetch jobs:', error);
@@ -42,7 +39,7 @@ export default {
 </script>
 
 <style scoped>
-.jobs-page {
+/* .jobs-page {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
@@ -72,5 +69,5 @@ export default {
 
 .card h3 {
   margin-top: 0;
-}
+} */
 </style>

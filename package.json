@@ -12,7 +12,9 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "@babel/runtime": "^7.24.0",
     "axios": "^1.6.7",
+    "babel-runtime": "^6.26.0",
     "pinia": "^2.1.7",
     "vue": "^3.4.15",
     "vue-markdown": "^2.2.4",

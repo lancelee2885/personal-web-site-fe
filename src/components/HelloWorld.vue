@@ -8,7 +8,7 @@ defineProps({
 </script>
 
 <template>
-  <div class="greetings">
+  <div class="about-page">
     <h1 class="green">{{ msg }}</h1>
     <h3>
       You’ve successfully created a project with Vite + Vue 3.
@@ -19,6 +19,13 @@ defineProps({
 </template>
 
 <style scoped>
+/* .about-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
 h1 {
   font-weight: 500;
   font-size: 2.6rem;
@@ -40,5 +47,5 @@ h3 {
   .greetings h3 {
     text-align: left;
   }
-}
+} */
 </style>
