@@ -1,23 +1,23 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import ProjectList from '../components/ProjectList.vue';
-import JobList from '../components/JobList.vue';
-import HelloWorld from '@/components/HelloWorld.vue';
+import AboutView from '@/views/AboutView.vue';
+import JobView from '@/views/JobView.vue';
+import ProjectView from '@/views/ProjectView.vue';
 
 const routes = [
   {
     path: '/',
-    name: 'HelloWorld',
-    component: HelloWorld,
+    name: 'About',
+    component: AboutView,
   },
   {
     path: '/projects',
     name: 'Projects',
-    component: ProjectList,
+    component: ProjectView,
   },
   {
     path: '/jobs',
     name: 'Jobs',
-    component: JobList,
+    component: JobView,
   },
 ];
 

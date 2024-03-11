@@ -70,7 +70,7 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-items: auto; */
+  justify-items: auto;
   padding-top: 20px;
   position: fixed;
   left: 0;
@@ -108,14 +108,11 @@ nav.open {
   text-decoration: none;
   padding: 10px;
   width: 100%;
-  /* display: flex; */
-  /* align-items: center; */
   text-align: center;
   transition: background-color 0.3s;
 }
 
 .menu a i {
-  /* margin-right: 50px; */
   width: fit-content;
 }
 
@@ -130,11 +127,11 @@ nav.open {
 }
 
 .menu a:hover {
-  background-color: #555;
+  background-color: #696767;
 }
 
 .menu.show a.router-link-active {
-  background-color: #555;
+  background-color: #696767;
 }
 
 .router-view-container {
